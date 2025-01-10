@@ -1,0 +1,122 @@
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@font-face {
+    font-family:"Maker";
+    src: url("fontes/PermanentMarker-Regular.ttf");
+    font-weight: normal;
+    font-size: 16px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+:root{
+    --cor1: #d1bcbb;
+    --cor2: #7A514E;
+    --cor3: #502926;
+    --cor4: #1d0f0e;
+    --Londrina:"Londrina Solid";
+    --fonte-padrão: "Arial","Verdana","Sans-Serif";
+    --Marker: "Maker";
+}
+body{
+    height: 100vh;
+    background-color: var(--cor1);
+}
+header{
+    font-family: var(--Londrina);
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    background-color: var(--cor4);
+    padding: 65px ;
+    margin: auto;
+    box-shadow: -2px 3px 15px rgba(48, 48, 48, 0.733);
+}
+header > h1{
+    font-size: 10vw;
+    text-shadow: 1.5x 1.5px 1.5px black;
+    margin: auto;
+}
+header  a{
+    text-decoration: none;
+    color: white;
+}
+header > h2{
+    font-size: 16px;
+}
+header a:hover{
+    text-decoration: underline;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+main{
+    margin: auto;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid var(--cor3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 2px 8px rgb(109 108 108 / 77%);
+}
+main p{
+    font-family: var(--Marker);
+    font-size: 28px;
+    font-weight: normal;
+    padding: 15px;
+    max-width: 350px;
+    margin-left: 20px;
+}
+section{
+    padding-top: 28px;
+    background-color: grey;
+    color: white;
+    height: 400px;
+    padding: 20px;
+
+}
+section  p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    font-size: 25px;
+    margin: 0px;
+}
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    font-family: var(--fonte-padrão);
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(228, 227, 227);
+}
+footer p{
+    padding: 5px;
+    margin: 0px;
+}
